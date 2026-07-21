@@ -1,6 +1,6 @@
 # Velocity Method Pack
 
-Portable, harness-agnostic **method skills** distilled from the Government of Alberta [Velocity White Papers](https://thevelocitywhitepapers.com/en/) corpus ([source repo](https://github.com/GovAlta/the-velocity-white-papers)) and the public [COMMON-HARNESS](https://github.com/GovAlta/COMMON-HARNESS) patterns.
+Portable, harness-agnostic **method skills** distilled from the Government of Alberta [Velocity White Papers](https://thevelocitywhitepapers.com/) corpus ([source repo](https://github.com/GovAlta/the-velocity-white-papers)) and the public [COMMON-HARNESS](https://github.com/GovAlta/COMMON-HARNESS) patterns.
 
 This is a **YouTube trailer**, not the feature film:
 
@@ -55,8 +55,8 @@ cd velocity-method-pack
 
 ## Attribution
 
-- Inspired by Government of Alberta [Velocity White Papers](https://thevelocitywhitepapers.com/en/) ([GovAlta/the-velocity-white-papers](https://github.com/GovAlta/the-velocity-white-papers); method citations only).
-- Structural patterns informed by [GovAlta/COMMON-HARNESS](https://github.com/GovAlta/COMMON-HARNESS) (MIT).
+- Inspired by Government of Alberta [Velocity White Papers](https://thevelocitywhitepapers.com/) ([GovAlta/the-velocity-white-papers](https://github.com/GovAlta/the-velocity-white-papers); method citations only).
+- Structural patterns informed by [GovAlta/COMMON-HARNESS](https://github.com/GovAlta/COMMON-HARNESS) (MIT — `LICENSE` file in that repo; GitHub API may still report `NOASSERTION`).
 - This pack is an independent distillation. It is **not** an official GovAlta product and is **not** a mirror of any personal private skill kit.
 
 ## License

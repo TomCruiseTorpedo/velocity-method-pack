@@ -38,6 +38,8 @@ link_one() {
     [[ -d "$skill_dir" ]] || continue
     local name; name="$(basename "$skill_dir")"
     local dest="$dest_root/$name"
+    # Strip trailing slash so the symlink target is the skill directory itself.
+    skill_dir="${skill_dir%/}"
     if [[ "$APPLY" -eq 1 ]]; then
       ln -sfn "$skill_dir" "$dest"
       echo "LINKED $dest -> $skill_dir"
@@ -56,17 +58,21 @@ cat <<EOF
 # Velocity Method Pack — install helpers (dry-run)
 # Review docs/harness-adapters.md. Then re-run with --apply --target <dir>.
 
-# Claude Code (user-global):
+# Claude Code (user-global) — also visible to Cursor via Claude compat roots:
 ./install.sh --apply --target "\$HOME/.claude/skills"
 
-# Cursor (user-global):
+# Cursor native user-global:
 ./install.sh --apply --target "\$HOME/.cursor/skills"
-# Cursor also loads ~/.agents/skills and project .cursor/skills / .agents/skills
 
-# Codex (preferred user path per current Codex loader):
+# Codex preferred (+ Cursor via agents root):
 ./install.sh --apply --target "\$HOME/.agents/skills"
-# Legacy still works: \$CODEX_HOME/skills (default ~/.codex/skills)
+# Legacy Codex: \$CODEX_HOME/skills (default ~/.codex/skills)
 
-# Project-local Claude Code (from your app repo):
+# All three harnesses (recommended pair):
+#   ./install.sh --apply --target "\$HOME/.claude/skills"
+#   ./install.sh --apply --target "\$HOME/.agents/skills"
+
+# Project-local examples (from your app repo):
 # mkdir -p .claude/skills && ./install.sh --apply --target "\$PWD/.claude/skills"
+# mkdir -p .agents/skills && ./install.sh --apply --target "\$PWD/.agents/skills"
 EOF

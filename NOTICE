@@ -11,6 +11,6 @@ Ideas and structural patterns were informed by:
     repository's application template, security scanner trees, or hook scripts.
     Method cards here are rewritten for portable, harness-agnostic use.
 
-Velocity White Papers (site): https://thevelocitywhitepapers.com/en/
+Velocity White Papers (site): https://thevelocitywhitepapers.com/
 Velocity White Papers (repo): https://github.com/GovAlta/the-velocity-white-papers
 COMMON-HARNESS: https://github.com/GovAlta/COMMON-HARNESS

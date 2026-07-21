@@ -84,3 +84,7 @@ should land as one of the recipes above (or a new recipe with the same shape:
 - Log gate name + pass/fail for an audit trail when possible.
 - Waivers belong in an explicit skip list or accepted-risk record — not silent
   `|| true` on release-blocking checks.
+- Wire recipes using each harness's real event names (see
+  [harness-adapters.md](./harness-adapters.md)): Claude Code & Codex both expose
+  `Stop` / `PostToolUse`-class events; Cursor uses `stop` / `afterFileEdit` /
+  `preToolUse` (and friends). Do not copy event strings blindly across products.
