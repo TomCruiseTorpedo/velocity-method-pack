@@ -1,0 +1,14 @@
+Velocity Method Pack
+Copyright 2026 TomCruiseTorpedo
+
+This pack contains original method documentation under the Apache License, Version 2.0.
+
+Ideas and structural patterns were informed by:
+
+  - Government of Alberta "Velocity White Papers" (public corpus). Paper prose is
+    not copied; titles and public repository links are cited for attribution.
+  - GovAlta/COMMON-HARNESS (MIT License). We do not redistribute that
+    repository's application template, security scanner trees, or hook scripts.
+    Method cards here are rewritten for portable, harness-agnostic use.
+
+COMMON-HARNESS: https://github.com/GovAlta/COMMON-HARNESS
